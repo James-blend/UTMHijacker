@@ -1,32 +1,31 @@
 {
     "manifest_version": 3,
-    "name": "UTMHijacker",
+    "name": "UTMHijack",
     "version": "1.0",
-    "description": "Hijack Marketer's UTMs and replace them with your own custom message!",
-    "icons": {
-      "48": "icon.png"
-    },
+    "description": "Modify and customize UTM parameters on the fly.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
     "background": {
       "service_worker": "background.js"
     },
-    "permissions": [
-      "storage",
-      "tabs"
-    ],
     "action": {
+      "default_popup": "src/popup/popup.html",
       "default_icon": {
         "16": "images/icon16.png",
         "48": "images/icon48.png",
         "128": "images/icon128.png"
-      },
-      "default_popup": "popup.html",
-      "default_title": "Click here!"
-    },
-    "content_scripts": [
-      {
-        "matches": ["http://*.example.com/*"],
-        "js": ["contentScript.js"]
       }
-    ]
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
   }
   
