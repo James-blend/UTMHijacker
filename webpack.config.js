@@ -34,7 +34,7 @@ module.exports = {
       patterns: [
         { from: 'src/manifest.json', to: 'manifest.json' },
         // Here you can add more patterns to copy other files or directories as needed
-        // Example: { from: 'src/popup/popup.html', to: 'popup.html' },
+        { from: 'src/popup/popup.html', to: 'popup.html' },
         // Example: { from: 'src/images', to: 'images' }
       ],
     }),

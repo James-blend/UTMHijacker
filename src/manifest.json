@@ -12,9 +12,9 @@
       "<all_urls>"
     ],
     "background": {
-      "service_worker": "src/background/background.js"
+      "service_worker": "background.bundle.js"
     },
     "action": {
-      "default_popup": "src/popup/popup.html"
+      "default_popup": "popup.html"
     }
   }
