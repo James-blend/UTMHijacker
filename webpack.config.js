@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: 'src/manifest.json', to: 'manifest.json' },
+        { from: 'manifest.json', to: 'manifest.json' },
         // Here you can add more patterns to copy other files or directories as needed
         // Example: { from: 'src/popup/popup.html', to: 'popup.html' },
         // Example: { from: 'src/images', to: 'images' }
